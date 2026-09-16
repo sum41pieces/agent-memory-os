@@ -1,0 +1,1 @@
+"""Shadow-project safety boundaries."""

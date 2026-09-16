@@ -1,0 +1,630 @@
+{
+  "active": [
+    {
+      "activation_witness_candidate_ids": [
+        "path:current"
+      ],
+      "candidate_ids": [
+        "path:current"
+      ],
+      "confidence": {
+        "source": "synthetic:path:current:confidence",
+        "status": "known",
+        "value": 1.0
+      },
+      "conflict_candidate_ids": [],
+      "conflict_fact_ids": [],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:path:current:confidence",
+        "synthetic:path:current:deprecated",
+        "synthetic:path:current:explicit",
+        "synthetic:path:current:from",
+        "synthetic:path:current:hint",
+        "synthetic:path:current:metadata",
+        "synthetic:path:current:observed",
+        "synthetic:path:current:supersedes",
+        "synthetic:path:current:until",
+        "synthetic:path:current:value"
+      ],
+      "fact_id": "fact:v1:fce9ff16b667ac6e32c703b34217e80136638f9a3f3ccf7dd95e1480606cc959",
+      "predicate": "project-path",
+      "reason": "explicit current source-of-truth designation",
+      "relation_ids": [
+        "relation:v1:4fb5f8aed9efd46b292d447edebc0e254284e821976385a6acbdb79ab0f0958a"
+      ],
+      "requires_human_review": false,
+      "resolution_method": "EXPLICIT_SOURCE_OF_TRUTH",
+      "resolved_at": {
+        "source": "reconciliation:clock",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      },
+      "selected_value": {
+        "source": "synthetic:path:current:value",
+        "status": "known",
+        "value": "C:\\Users\\demo\\projects\\interview-agent-finals"
+      },
+      "status": "ACTIVE",
+      "subject": "project",
+      "superseded_by_fact_ids": [],
+      "superseded_candidate_ids": [],
+      "supersedes_fact_ids": [
+        "fact:v1:64f285eb7979e2259a7757a01506c5b3f9d16594bae562bd9ecdff626942537d"
+      ],
+      "valid_from": {
+        "source": "synthetic:path:current:from",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      }
+    },
+    {
+      "activation_witness_candidate_ids": [
+        "port:current"
+      ],
+      "candidate_ids": [
+        "port:current"
+      ],
+      "confidence": {
+        "source": "synthetic:port:current:confidence",
+        "status": "known",
+        "value": 1.0
+      },
+      "conflict_candidate_ids": [],
+      "conflict_fact_ids": [],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:port:current:confidence",
+        "synthetic:port:current:deprecated",
+        "synthetic:port:current:explicit",
+        "synthetic:port:current:from",
+        "synthetic:port:current:hint",
+        "synthetic:port:current:metadata",
+        "synthetic:port:current:observed",
+        "synthetic:port:current:supersedes",
+        "synthetic:port:current:until",
+        "synthetic:port:current:value"
+      ],
+      "fact_id": "fact:v1:92dcb03f0bc8add9d45ae506d65b819692c1c0cf957cfd247511b4399cc58536",
+      "predicate": "runtime-port",
+      "reason": "current direct evidence supersedes historical memory",
+      "relation_ids": [
+        "relation:v1:348ab15c8ddc1a904504314a25c03a6922385eefb223a2394060ea69037df503"
+      ],
+      "requires_human_review": false,
+      "resolution_method": "CURRENT_EVIDENCE_OVER_HISTORICAL",
+      "resolved_at": {
+        "source": "reconciliation:clock",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      },
+      "selected_value": {
+        "source": "synthetic:port:current:value",
+        "status": "known",
+        "value": 8000
+      },
+      "status": "ACTIVE",
+      "subject": "project",
+      "superseded_by_fact_ids": [],
+      "superseded_candidate_ids": [],
+      "supersedes_fact_ids": [
+        "fact:v1:6f55f60c3c028c2e0d8c170d5e1ac17b70a951f45153c40a2e5172cce75437ec"
+      ],
+      "valid_from": {
+        "source": "synthetic:port:current:from",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      }
+    }
+  ],
+  "conflicted": [
+    {
+      "activation_witness_candidate_ids": [],
+      "candidate_ids": [
+        "docs:right"
+      ],
+      "confidence": {
+        "source": "synthetic:docs:right:confidence",
+        "status": "known",
+        "value": 1.0
+      },
+      "conflict_candidate_ids": [
+        "docs:left"
+      ],
+      "conflict_fact_ids": [
+        "fact:v1:bc2b439a8b9a19134a2b771e37e06f92ee0bfdaa17725321dcdb270bf72e0151"
+      ],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:docs:right:confidence",
+        "synthetic:docs:right:deprecated",
+        "synthetic:docs:right:explicit",
+        "synthetic:docs:right:from",
+        "synthetic:docs:right:hint",
+        "synthetic:docs:right:metadata",
+        "synthetic:docs:right:observed",
+        "synthetic:docs:right:supersedes",
+        "synthetic:docs:right:until",
+        "synthetic:docs:right:value"
+      ],
+      "fact_id": "fact:v1:44ea414285ee9652d52a44cf6007ed5a8f4cfe112c3a5b07d788d26e78a2e330",
+      "predicate": "project-doc-port",
+      "reason": "unresolved competing current facts",
+      "relation_ids": [
+        "relation:v1:56a93f4a353ec08d9237967f4a8292cb9b0daef050d19c35fc32d45a0c0b673e",
+        "relation:v1:aae9235e928114e8d2e05cd2a79a32fa199cf959217edc5a3020e35235418f87"
+      ],
+      "requires_human_review": true,
+      "resolution_method": "UNRESOLVED_CONFLICT",
+      "resolved_at": {
+        "source": "reconciliation:clock",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      },
+      "selected_value": {
+        "source": "synthetic:docs:right:value",
+        "status": "known",
+        "value": 8030
+      },
+      "status": "CONFLICTED",
+      "subject": "project",
+      "superseded_by_fact_ids": [],
+      "superseded_candidate_ids": [],
+      "supersedes_fact_ids": [],
+      "valid_from": {
+        "source": "synthetic:docs:right:from",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      }
+    },
+    {
+      "activation_witness_candidate_ids": [],
+      "candidate_ids": [
+        "docs:left"
+      ],
+      "confidence": {
+        "source": "synthetic:docs:left:confidence",
+        "status": "known",
+        "value": 1.0
+      },
+      "conflict_candidate_ids": [
+        "docs:right"
+      ],
+      "conflict_fact_ids": [
+        "fact:v1:44ea414285ee9652d52a44cf6007ed5a8f4cfe112c3a5b07d788d26e78a2e330"
+      ],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:docs:left:confidence",
+        "synthetic:docs:left:deprecated",
+        "synthetic:docs:left:explicit",
+        "synthetic:docs:left:from",
+        "synthetic:docs:left:hint",
+        "synthetic:docs:left:metadata",
+        "synthetic:docs:left:observed",
+        "synthetic:docs:left:supersedes",
+        "synthetic:docs:left:until",
+        "synthetic:docs:left:value"
+      ],
+      "fact_id": "fact:v1:bc2b439a8b9a19134a2b771e37e06f92ee0bfdaa17725321dcdb270bf72e0151",
+      "predicate": "project-doc-port",
+      "reason": "unresolved competing current facts",
+      "relation_ids": [
+        "relation:v1:56a93f4a353ec08d9237967f4a8292cb9b0daef050d19c35fc32d45a0c0b673e",
+        "relation:v1:aae9235e928114e8d2e05cd2a79a32fa199cf959217edc5a3020e35235418f87"
+      ],
+      "requires_human_review": true,
+      "resolution_method": "UNRESOLVED_CONFLICT",
+      "resolved_at": {
+        "source": "reconciliation:clock",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      },
+      "selected_value": {
+        "source": "synthetic:docs:left:value",
+        "status": "known",
+        "value": 8020
+      },
+      "status": "CONFLICTED",
+      "subject": "project",
+      "superseded_by_fact_ids": [],
+      "superseded_candidate_ids": [],
+      "supersedes_fact_ids": [],
+      "valid_from": {
+        "source": "synthetic:docs:left:from",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      }
+    }
+  ],
+  "deprecated": [
+    {
+      "activation_witness_candidate_ids": [],
+      "candidate_ids": [
+        "retired:legacy"
+      ],
+      "confidence": {
+        "source": "synthetic:retired:legacy:confidence",
+        "status": "known",
+        "value": 1.0
+      },
+      "conflict_candidate_ids": [],
+      "conflict_fact_ids": [],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:retired:legacy:confidence",
+        "synthetic:retired:legacy:deprecated",
+        "synthetic:retired:legacy:explicit",
+        "synthetic:retired:legacy:from",
+        "synthetic:retired:legacy:hint",
+        "synthetic:retired:legacy:metadata",
+        "synthetic:retired:legacy:observed",
+        "synthetic:retired:legacy:supersedes",
+        "synthetic:retired:legacy:until",
+        "synthetic:retired:legacy:value"
+      ],
+      "fact_id": "fact:v1:34c6cff8e317160d40ee26dffb82bd49ecb8d71381885a13e0fc30a2300fcf26",
+      "predicate": "legacy-mode",
+      "reason": "explicit deprecation",
+      "relation_ids": [],
+      "requires_human_review": false,
+      "resolution_method": "EXPLICIT_DEPRECATION",
+      "resolved_at": {
+        "source": "reconciliation:clock",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      },
+      "selected_value": {
+        "source": "synthetic:retired:legacy:value",
+        "status": "known",
+        "value": true
+      },
+      "status": "DEPRECATED",
+      "subject": "project",
+      "superseded_by_fact_ids": [],
+      "superseded_candidate_ids": [],
+      "supersedes_fact_ids": [],
+      "valid_from": {
+        "source": "synthetic:retired:legacy:from",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      }
+    }
+  ],
+  "human_review_required": true,
+  "pending": [
+    {
+      "activation_witness_candidate_ids": [],
+      "candidate_ids": [
+        "plan:future"
+      ],
+      "confidence": {
+        "source": "synthetic:plan:future:confidence",
+        "status": "known",
+        "value": 1.0
+      },
+      "conflict_candidate_ids": [],
+      "conflict_fact_ids": [],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:plan:future:confidence",
+        "synthetic:plan:future:deprecated",
+        "synthetic:plan:future:explicit",
+        "synthetic:plan:future:from",
+        "synthetic:plan:future:hint",
+        "synthetic:plan:future:metadata",
+        "synthetic:plan:future:observed",
+        "synthetic:plan:future:supersedes",
+        "synthetic:plan:future:until",
+        "synthetic:plan:future:value"
+      ],
+      "fact_id": "fact:v1:400f635faef91887de508f3942c50c43dd75161c64940005e38f6c2019cdc6a7",
+      "predicate": "planned-feature",
+      "reason": "candidate is not yet valid",
+      "relation_ids": [],
+      "requires_human_review": false,
+      "resolution_method": "TEMPORAL_PENDING",
+      "resolved_at": {
+        "source": "reconciliation:clock",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      },
+      "selected_value": {
+        "source": "synthetic:plan:future:value",
+        "status": "known",
+        "value": "dashboard"
+      },
+      "status": "PENDING",
+      "subject": "project",
+      "superseded_by_fact_ids": [],
+      "superseded_candidate_ids": [],
+      "supersedes_fact_ids": [],
+      "valid_from": {
+        "source": "synthetic:plan:future:from",
+        "status": "known",
+        "value": "2026-09-14T00:01:00+00:00"
+      }
+    }
+  ],
+  "project_id": "synthetic-interview-agent",
+  "reconciled_at": "2026-09-14T00:00:00+00:00",
+  "relations": [
+    {
+      "candidate_ids": [
+        "docs:left",
+        "docs:right"
+      ],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:docs:left:confidence",
+        "synthetic:docs:left:deprecated",
+        "synthetic:docs:left:explicit",
+        "synthetic:docs:left:from",
+        "synthetic:docs:left:hint",
+        "synthetic:docs:left:metadata",
+        "synthetic:docs:left:observed",
+        "synthetic:docs:left:supersedes",
+        "synthetic:docs:left:until",
+        "synthetic:docs:left:value",
+        "synthetic:docs:right:confidence",
+        "synthetic:docs:right:deprecated",
+        "synthetic:docs:right:explicit",
+        "synthetic:docs:right:from",
+        "synthetic:docs:right:hint",
+        "synthetic:docs:right:metadata",
+        "synthetic:docs:right:observed",
+        "synthetic:docs:right:supersedes",
+        "synthetic:docs:right:until",
+        "synthetic:docs:right:value"
+      ],
+      "from_fact_id": "fact:v1:44ea414285ee9652d52a44cf6007ed5a8f4cfe112c3a5b07d788d26e78a2e330",
+      "relation_id": "relation:v1:56a93f4a353ec08d9237967f4a8292cb9b0daef050d19c35fc32d45a0c0b673e",
+      "relation_reason": "unresolved competing current facts",
+      "relation_type": "CONFLICTS",
+      "to_fact_id": "fact:v1:bc2b439a8b9a19134a2b771e37e06f92ee0bfdaa17725321dcdb270bf72e0151"
+    },
+    {
+      "candidate_ids": [
+        "docs:left",
+        "docs:right"
+      ],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:docs:left:confidence",
+        "synthetic:docs:left:deprecated",
+        "synthetic:docs:left:explicit",
+        "synthetic:docs:left:from",
+        "synthetic:docs:left:hint",
+        "synthetic:docs:left:metadata",
+        "synthetic:docs:left:observed",
+        "synthetic:docs:left:supersedes",
+        "synthetic:docs:left:until",
+        "synthetic:docs:left:value",
+        "synthetic:docs:right:confidence",
+        "synthetic:docs:right:deprecated",
+        "synthetic:docs:right:explicit",
+        "synthetic:docs:right:from",
+        "synthetic:docs:right:hint",
+        "synthetic:docs:right:metadata",
+        "synthetic:docs:right:observed",
+        "synthetic:docs:right:supersedes",
+        "synthetic:docs:right:until",
+        "synthetic:docs:right:value"
+      ],
+      "from_fact_id": "fact:v1:bc2b439a8b9a19134a2b771e37e06f92ee0bfdaa17725321dcdb270bf72e0151",
+      "relation_id": "relation:v1:aae9235e928114e8d2e05cd2a79a32fa199cf959217edc5a3020e35235418f87",
+      "relation_reason": "unresolved competing current facts",
+      "relation_type": "CONFLICTS",
+      "to_fact_id": "fact:v1:44ea414285ee9652d52a44cf6007ed5a8f4cfe112c3a5b07d788d26e78a2e330"
+    },
+    {
+      "candidate_ids": [
+        "port:current",
+        "port:historical"
+      ],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:port:current:confidence",
+        "synthetic:port:current:deprecated",
+        "synthetic:port:current:explicit",
+        "synthetic:port:current:from",
+        "synthetic:port:current:hint",
+        "synthetic:port:current:metadata",
+        "synthetic:port:current:observed",
+        "synthetic:port:current:supersedes",
+        "synthetic:port:current:until",
+        "synthetic:port:current:value",
+        "synthetic:port:historical:confidence",
+        "synthetic:port:historical:deprecated",
+        "synthetic:port:historical:explicit",
+        "synthetic:port:historical:from",
+        "synthetic:port:historical:hint",
+        "synthetic:port:historical:metadata",
+        "synthetic:port:historical:observed",
+        "synthetic:port:historical:supersedes",
+        "synthetic:port:historical:until",
+        "synthetic:port:historical:value"
+      ],
+      "from_fact_id": "fact:v1:92dcb03f0bc8add9d45ae506d65b819692c1c0cf957cfd247511b4399cc58536",
+      "relation_id": "relation:v1:348ab15c8ddc1a904504314a25c03a6922385eefb223a2394060ea69037df503",
+      "relation_reason": "current direct evidence supersedes historical memory",
+      "relation_type": "SUPERSEDES",
+      "to_fact_id": "fact:v1:6f55f60c3c028c2e0d8c170d5e1ac17b70a951f45153c40a2e5172cce75437ec"
+    },
+    {
+      "candidate_ids": [
+        "path:current",
+        "path:old"
+      ],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:path:current:confidence",
+        "synthetic:path:current:deprecated",
+        "synthetic:path:current:explicit",
+        "synthetic:path:current:from",
+        "synthetic:path:current:hint",
+        "synthetic:path:current:metadata",
+        "synthetic:path:current:observed",
+        "synthetic:path:current:supersedes",
+        "synthetic:path:current:until",
+        "synthetic:path:current:value",
+        "synthetic:path:old:confidence",
+        "synthetic:path:old:deprecated",
+        "synthetic:path:old:explicit",
+        "synthetic:path:old:from",
+        "synthetic:path:old:hint",
+        "synthetic:path:old:metadata",
+        "synthetic:path:old:observed",
+        "synthetic:path:old:supersedes",
+        "synthetic:path:old:until",
+        "synthetic:path:old:value"
+      ],
+      "from_fact_id": "fact:v1:fce9ff16b667ac6e32c703b34217e80136638f9a3f3ccf7dd95e1480606cc959",
+      "relation_id": "relation:v1:4fb5f8aed9efd46b292d447edebc0e254284e821976385a6acbdb79ab0f0958a",
+      "relation_reason": "explicit current source-of-truth designation",
+      "relation_type": "SUPERSEDES",
+      "to_fact_id": "fact:v1:64f285eb7979e2259a7757a01506c5b3f9d16594bae562bd9ecdff626942537d"
+    }
+  ],
+  "schema_version": "reconciliation:v1",
+  "snapshot_id": "snapshot:v1:8a646071f3d71b077da11b15056f935158eeca22ffcad30e8d81d8347235b54e",
+  "summary_counts": {
+    "active": 2,
+    "conflicted": 2,
+    "deprecated": 1,
+    "pending": 1,
+    "relations": 4,
+    "superseded": 2,
+    "unresolved": 0,
+    "warnings": 1
+  },
+  "superseded": [
+    {
+      "activation_witness_candidate_ids": [],
+      "candidate_ids": [
+        "path:old"
+      ],
+      "confidence": {
+        "source": "synthetic:path:old:confidence",
+        "status": "known",
+        "value": 1.0
+      },
+      "conflict_candidate_ids": [],
+      "conflict_fact_ids": [],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:path:old:confidence",
+        "synthetic:path:old:deprecated",
+        "synthetic:path:old:explicit",
+        "synthetic:path:old:from",
+        "synthetic:path:old:hint",
+        "synthetic:path:old:metadata",
+        "synthetic:path:old:observed",
+        "synthetic:path:old:supersedes",
+        "synthetic:path:old:until",
+        "synthetic:path:old:value"
+      ],
+      "fact_id": "fact:v1:64f285eb7979e2259a7757a01506c5b3f9d16594bae562bd9ecdff626942537d",
+      "predicate": "project-path",
+      "reason": "explicit current source-of-truth designation",
+      "relation_ids": [
+        "relation:v1:4fb5f8aed9efd46b292d447edebc0e254284e821976385a6acbdb79ab0f0958a"
+      ],
+      "requires_human_review": false,
+      "resolution_method": "EXPLICIT_SOURCE_OF_TRUTH",
+      "resolved_at": {
+        "source": "reconciliation:clock",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      },
+      "selected_value": {
+        "source": "synthetic:path:old:value",
+        "status": "known",
+        "value": "C:\\Users\\demo\\projects\\interview-agent-v1"
+      },
+      "status": "SUPERSEDED",
+      "subject": "project",
+      "superseded_by_fact_ids": [
+        "fact:v1:fce9ff16b667ac6e32c703b34217e80136638f9a3f3ccf7dd95e1480606cc959"
+      ],
+      "superseded_candidate_ids": [],
+      "supersedes_fact_ids": [],
+      "valid_from": {
+        "source": "synthetic:path:old:from",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      }
+    },
+    {
+      "activation_witness_candidate_ids": [],
+      "candidate_ids": [
+        "port:historical"
+      ],
+      "confidence": {
+        "source": "synthetic:port:historical:confidence",
+        "status": "known",
+        "value": 1.0
+      },
+      "conflict_candidate_ids": [],
+      "conflict_fact_ids": [],
+      "evidence_refs": [
+        "synthetic:candidate",
+        "synthetic:port:historical:confidence",
+        "synthetic:port:historical:deprecated",
+        "synthetic:port:historical:explicit",
+        "synthetic:port:historical:from",
+        "synthetic:port:historical:hint",
+        "synthetic:port:historical:metadata",
+        "synthetic:port:historical:observed",
+        "synthetic:port:historical:supersedes",
+        "synthetic:port:historical:until",
+        "synthetic:port:historical:value"
+      ],
+      "fact_id": "fact:v1:6f55f60c3c028c2e0d8c170d5e1ac17b70a951f45153c40a2e5172cce75437ec",
+      "predicate": "runtime-port",
+      "reason": "current direct evidence supersedes historical memory",
+      "relation_ids": [
+        "relation:v1:348ab15c8ddc1a904504314a25c03a6922385eefb223a2394060ea69037df503"
+      ],
+      "requires_human_review": false,
+      "resolution_method": "CURRENT_EVIDENCE_OVER_HISTORICAL",
+      "resolved_at": {
+        "source": "reconciliation:clock",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      },
+      "selected_value": {
+        "source": "synthetic:port:historical:value",
+        "status": "known",
+        "value": 8010
+      },
+      "status": "SUPERSEDED",
+      "subject": "project",
+      "superseded_by_fact_ids": [
+        "fact:v1:92dcb03f0bc8add9d45ae506d65b819692c1c0cf957cfd247511b4399cc58536"
+      ],
+      "superseded_candidate_ids": [],
+      "supersedes_fact_ids": [],
+      "valid_from": {
+        "source": "synthetic:port:historical:from",
+        "status": "known",
+        "value": "2026-09-14T00:00:00+00:00"
+      }
+    }
+  ],
+  "unresolved": [],
+  "unresolved_count": 0,
+  "warnings": [
+    {
+      "candidate_ids": [
+        "plan:future"
+      ],
+      "code": "FUTURE_VALIDITY",
+      "evidence_refs": [
+        "synthetic:plan:future:from"
+      ],
+      "message": "valid_from is later than the reconciliation time",
+      "requires_human_review": false
+    }
+  ]
+}

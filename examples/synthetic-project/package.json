@@ -1,0 +1,8 @@
+{
+  "name": "synthetic-memory-project",
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "test:unit": "pytest -q"
+  }
+}

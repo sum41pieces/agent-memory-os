@@ -1,0 +1,507 @@
+{
+  "captured_at": {
+    "source": "synthetic:collector:clock",
+    "status": "known",
+    "value": "2026-09-14T00:00:00+00:00"
+  },
+  "collector": {
+    "errors": {
+      "source": "synthetic:collector:errors",
+      "status": "known",
+      "value": []
+    },
+    "evidence_sources": {
+      "source": "synthetic:collector:sources",
+      "status": "known",
+      "value": [
+        "synthetic:docs",
+        "synthetic:git",
+        "synthetic:tests"
+      ]
+    },
+    "shadow_guard": {
+      "source": "synthetic:guard:report",
+      "status": "known",
+      "value": {
+        "changed_components": {
+          "source": "synthetic:guard:comparison",
+          "status": "known",
+          "value": []
+        },
+        "head_after": {
+          "source": "synthetic:guard:after",
+          "status": "known",
+          "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "head_before": {
+          "source": "synthetic:guard:before",
+          "status": "known",
+          "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "head_unchanged": {
+          "source": "synthetic:guard:comparison",
+          "status": "known",
+          "value": true
+        },
+        "index_hash_after": {
+          "source": "synthetic:guard:after",
+          "status": "known",
+          "value": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        },
+        "index_hash_before": {
+          "source": "synthetic:guard:before",
+          "status": "known",
+          "value": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        },
+        "index_unchanged": {
+          "source": "synthetic:guard:comparison",
+          "status": "known",
+          "value": true
+        },
+        "status_hash_after": {
+          "source": "synthetic:guard:after",
+          "status": "known",
+          "value": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        },
+        "status_hash_before": {
+          "source": "synthetic:guard:before",
+          "status": "known",
+          "value": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        },
+        "status_unchanged": {
+          "source": "synthetic:guard:comparison",
+          "status": "known",
+          "value": true
+        },
+        "tracked_content_unchanged": {
+          "source": "synthetic:guard:comparison",
+          "status": "known",
+          "value": true
+        },
+        "tracked_manifest_after": {
+          "source": "synthetic:guard:after",
+          "status": "known",
+          "value": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+        },
+        "tracked_manifest_before": {
+          "source": "synthetic:guard:before",
+          "status": "known",
+          "value": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+        },
+        "verdict": {
+          "source": "synthetic:guard:comparison",
+          "status": "known",
+          "value": "SHADOW_COLLECTION_PASS"
+        }
+      }
+    },
+    "warnings": {
+      "source": "synthetic:collector:warnings",
+      "status": "known",
+      "value": []
+    }
+  },
+  "docs": {
+    "agents": {
+      "source": "synthetic:docs:AGENTS",
+      "status": "known",
+      "value": {
+        "last_updated": {
+          "source": "synthetic:docs:AGENTS",
+          "status": "known",
+          "value": "2026-09-13T00:00:00+00:00"
+        },
+        "path": {
+          "source": "synthetic:docs:AGENTS",
+          "status": "known",
+          "value": "docs/AGENTS.md"
+        },
+        "summary": {
+          "source": "synthetic:docs:AGENTS",
+          "status": "known",
+          "value": "Synthetic AGENTS document"
+        },
+        "title": {
+          "source": "synthetic:docs:AGENTS",
+          "status": "known",
+          "value": "Agents"
+        }
+      }
+    },
+    "decisions": {
+      "source": "synthetic:docs:DECISIONS",
+      "status": "known",
+      "value": {
+        "last_updated": {
+          "source": "synthetic:docs:DECISIONS",
+          "status": "known",
+          "value": "2026-09-13T00:00:00+00:00"
+        },
+        "path": {
+          "source": "synthetic:docs:DECISIONS",
+          "status": "known",
+          "value": "docs/DECISIONS.md"
+        },
+        "summary": {
+          "source": "synthetic:docs:DECISIONS",
+          "status": "known",
+          "value": "Synthetic DECISIONS document"
+        },
+        "title": {
+          "source": "synthetic:docs:DECISIONS",
+          "status": "known",
+          "value": "Decisions"
+        }
+      }
+    },
+    "discovered": {
+      "source": "synthetic:docs:discovery",
+      "status": "known",
+      "value": [
+        "AGENTS.md",
+        "README.md",
+        "docs/DECISIONS.md",
+        "docs/NEXT.md",
+        "docs/PROJECT_CONTEXT.md",
+        "docs/SESSION_LOG.md",
+        "docs/STATE.md"
+      ]
+    },
+    "next": {
+      "source": "synthetic:docs:NEXT",
+      "status": "known",
+      "value": {
+        "last_updated": {
+          "source": "synthetic:docs:NEXT",
+          "status": "known",
+          "value": "2026-09-13T00:00:00+00:00"
+        },
+        "path": {
+          "source": "synthetic:docs:NEXT",
+          "status": "known",
+          "value": "docs/NEXT.md"
+        },
+        "summary": {
+          "source": "synthetic:docs:NEXT",
+          "status": "known",
+          "value": "Synthetic NEXT document"
+        },
+        "title": {
+          "source": "synthetic:docs:NEXT",
+          "status": "known",
+          "value": "Next"
+        }
+      }
+    },
+    "project_context": {
+      "source": "synthetic:docs:PROJECT_CONTEXT",
+      "status": "known",
+      "value": {
+        "last_updated": {
+          "source": "synthetic:docs:PROJECT_CONTEXT",
+          "status": "known",
+          "value": "2026-09-13T00:00:00+00:00"
+        },
+        "path": {
+          "source": "synthetic:docs:PROJECT_CONTEXT",
+          "status": "known",
+          "value": "docs/PROJECT_CONTEXT.md"
+        },
+        "summary": {
+          "source": "synthetic:docs:PROJECT_CONTEXT",
+          "status": "known",
+          "value": "Synthetic PROJECT_CONTEXT document"
+        },
+        "title": {
+          "source": "synthetic:docs:PROJECT_CONTEXT",
+          "status": "known",
+          "value": "Project Context"
+        }
+      }
+    },
+    "readme": {
+      "source": "synthetic:docs:README",
+      "status": "known",
+      "value": {
+        "last_updated": {
+          "source": "synthetic:docs:README",
+          "status": "known",
+          "value": "2026-09-13T00:00:00+00:00"
+        },
+        "path": {
+          "source": "synthetic:docs:README",
+          "status": "known",
+          "value": "docs/README.md"
+        },
+        "summary": {
+          "source": "synthetic:docs:README",
+          "status": "known",
+          "value": "Synthetic README document"
+        },
+        "title": {
+          "source": "synthetic:docs:README",
+          "status": "known",
+          "value": "Readme"
+        }
+      }
+    },
+    "session_log": {
+      "source": "synthetic:docs:SESSION_LOG",
+      "status": "known",
+      "value": {
+        "last_updated": {
+          "source": "synthetic:docs:SESSION_LOG",
+          "status": "known",
+          "value": "2026-09-13T00:00:00+00:00"
+        },
+        "path": {
+          "source": "synthetic:docs:SESSION_LOG",
+          "status": "known",
+          "value": "docs/SESSION_LOG.md"
+        },
+        "summary": {
+          "source": "synthetic:docs:SESSION_LOG",
+          "status": "known",
+          "value": "Synthetic SESSION_LOG document"
+        },
+        "title": {
+          "source": "synthetic:docs:SESSION_LOG",
+          "status": "known",
+          "value": "Session Log"
+        }
+      }
+    },
+    "state": {
+      "source": "synthetic:docs:STATE",
+      "status": "known",
+      "value": {
+        "last_updated": {
+          "source": "synthetic:docs:STATE",
+          "status": "known",
+          "value": "2026-09-13T00:00:00+00:00"
+        },
+        "path": {
+          "source": "synthetic:docs:STATE",
+          "status": "known",
+          "value": "docs/STATE.md"
+        },
+        "summary": {
+          "source": "synthetic:docs:STATE",
+          "status": "known",
+          "value": "Synthetic STATE document"
+        },
+        "title": {
+          "source": "synthetic:docs:STATE",
+          "status": "known",
+          "value": "State"
+        }
+      }
+    }
+  },
+  "git": {
+    "branch": {
+      "source": "synthetic:git:branch",
+      "status": "known",
+      "value": "main"
+    },
+    "head_sha": {
+      "source": "synthetic:git:head",
+      "status": "known",
+      "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "head_short": {
+      "source": "synthetic:git:head-short",
+      "status": "known",
+      "value": "aaaaaaaaaaaa"
+    },
+    "is_repository": {
+      "source": "synthetic:git:repository",
+      "status": "known",
+      "value": true
+    },
+    "modified_count": {
+      "source": "synthetic:git:modified",
+      "status": "known",
+      "value": 1
+    },
+    "recent_commits": {
+      "source": "synthetic:git:log",
+      "status": "known",
+      "value": [
+        {
+          "authored_at": {
+            "source": "synthetic:git:log",
+            "status": "known",
+            "value": "2026-09-13T00:00:00+00:00"
+          },
+          "sha": {
+            "source": "synthetic:git:log",
+            "status": "known",
+            "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          },
+          "short_sha": {
+            "source": "synthetic:git:log",
+            "status": "known",
+            "value": "aaaaaaaaaaaa"
+          },
+          "subject": {
+            "source": "synthetic:git:log",
+            "status": "known",
+            "value": "synthetic commit"
+          }
+        }
+      ]
+    },
+    "remote_count": {
+      "source": "synthetic:git:remotes",
+      "status": "known",
+      "value": 0
+    },
+    "staged_count": {
+      "source": "synthetic:git:staged",
+      "status": "known",
+      "value": 0
+    },
+    "tags_at_head": {
+      "source": "synthetic:git:tags",
+      "status": "known",
+      "value": []
+    },
+    "untracked_count": {
+      "source": "synthetic:git:untracked",
+      "status": "known",
+      "value": 0
+    }
+  },
+  "project_id": {
+    "source": "synthetic:collector:project-id",
+    "status": "known",
+    "value": "synthetic-interview-agent"
+  },
+  "recent_changes": {
+    "changed_files": {
+      "source": "synthetic:changes:files",
+      "status": "known",
+      "value": [
+        {
+          "path": {
+            "source": "synthetic:git:diff",
+            "status": "known",
+            "value": "README.md"
+          },
+          "status": {
+            "source": "synthetic:git:diff",
+            "status": "known",
+            "value": "M"
+          }
+        }
+      ]
+    },
+    "diff_stat": {
+      "source": "synthetic:changes:diff-stat",
+      "status": "known",
+      "value": "1 file changed"
+    },
+    "recent_commit_summary": {
+      "source": "synthetic:changes:commits",
+      "status": "known",
+      "value": [
+        "aaaaaaaaaaaa synthetic commit"
+      ]
+    }
+  },
+  "repository": {
+    "exists": {
+      "source": "synthetic:repository:exists",
+      "status": "known",
+      "value": true
+    },
+    "path": {
+      "source": "synthetic:repository:path",
+      "status": "known",
+      "value": "C:\\Users\\demo\\projects\\interview-agent-finals"
+    },
+    "project_name": {
+      "source": "synthetic:repository:name",
+      "status": "known",
+      "value": "interview-agent-finals"
+    }
+  },
+  "schema_version": {
+    "source": "synthetic:collector:schema",
+    "status": "known",
+    "value": "1.0.0"
+  },
+  "source_mode": {
+    "source": "synthetic:collector:mode",
+    "status": "known",
+    "value": "shadow_read_only"
+  },
+  "tests": {
+    "discovered_commands": {
+      "source": "synthetic:tests:commands",
+      "status": "known",
+      "value": [
+        {
+          "command": {
+            "source": "synthetic:tests:discovery",
+            "status": "known",
+            "value": "pytest"
+          },
+          "kind": {
+            "source": "synthetic:tests:discovery",
+            "status": "known",
+            "value": "python"
+          },
+          "name": {
+            "source": "synthetic:tests:discovery",
+            "status": "known",
+            "value": "test"
+          }
+        }
+      ]
+    },
+    "discovered_test_roots": {
+      "source": "synthetic:tests:discovery",
+      "status": "known",
+      "value": [
+        "tests"
+      ]
+    },
+    "frontend_test_files": {
+      "source": "synthetic:tests:discovery",
+      "status": "known",
+      "value": []
+    },
+    "last_recorded_results": {
+      "source": "synthetic:tests:recorded",
+      "status": "known",
+      "value": [
+        {
+          "execution_status": {
+            "source": "synthetic:tests:recorded",
+            "status": "known",
+            "value": "recorded_not_executed"
+          },
+          "source_document": {
+            "source": "synthetic:tests:recorded",
+            "status": "known",
+            "value": "docs/STATE.md"
+          },
+          "summary": {
+            "source": "synthetic:tests:recorded",
+            "status": "known",
+            "value": "116 passed"
+          }
+        }
+      ]
+    },
+    "python_test_files": {
+      "source": "synthetic:tests:discovery",
+      "status": "known",
+      "value": [
+        "tests/test_example.py"
+      ]
+    }
+  }
+}
