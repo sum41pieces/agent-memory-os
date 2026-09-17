@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta
+      name="description"
+      content="A read-only synthetic demo of persistent project-state reconciliation."
+    >
+    <title>Agent Memory OS — Reconciliation Explorer</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to explorer</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="#top" aria-label="Agent Memory OS home">
+          <span class="wordmark-mark" aria-hidden="true">AM</span>
+          <span>Agent Memory OS</span>
+        </a>
+        <button class="theme-toggle" id="theme-toggle" type="button">
+          <span class="theme-indicator" aria-hidden="true"></span>
+          <span id="theme-label">Theme: system</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="page-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Read-only portfolio viewer</p>
+            <h1 id="page-title">Reconciliation<br>Explorer</h1>
+            <p class="hero-subtitle">
+              A read-only synthetic demo of persistent project-state reconciliation.
+            </p>
+            <div class="privacy-badges" aria-label="Demo data guarantees">
+              <span class="badge badge-accent">SYNTHETIC DEMO</span>
+              <span class="badge">NO PRIVATE PROJECT DATA</span>
+            </div>
+          </div>
+
+          <div class="hero-context" aria-label="Demo context">
+            <div class="context-row">
+              <span>Project</span>
+              <strong id="project-name">Loading…</strong>
+            </div>
+            <div class="context-row">
+              <span>Mode</span>
+              <strong>Read-only demo</strong>
+            </div>
+            <div class="context-row">
+              <span>Source</span>
+              <strong>Public synthetic JSON</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="shell">
+        <div class="load-state" id="load-state" role="status" aria-live="polite">
+          <span class="load-pulse" aria-hidden="true"></span>
+          Reading synthetic reconciliation data…
+        </div>
+
+        <section class="section-block overview" aria-labelledby="overview-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-index">01 / Overview</p>
+              <h2 id="overview-title">Explicit state, at a glance</h2>
+            </div>
+            <p>Counts come directly from the reconciled facts below.</p>
+          </div>
+          <div class="status-grid" id="status-filters" aria-label="Filter facts by status"></div>
+        </section>
+
+        <section class="section-block facts-section" aria-labelledby="facts-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-index">02 / Reconciled facts</p>
+              <h2 id="facts-title">What the evidence supports</h2>
+            </div>
+            <p><span id="visible-count">0</span> facts shown · Select a card for provenance</p>
+          </div>
+          <div class="fact-grid" id="fact-grid"></div>
+        </section>
+
+        <section class="section-block" aria-labelledby="stories-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-index">03 / Decision stories</p>
+              <h2 id="stories-title">How state changes remain legible</h2>
+            </div>
+            <p>Rendered from facts and relation records—never recomputed.</p>
+          </div>
+
+          <div class="stories-grid">
+            <article class="story-card story-wide" aria-labelledby="path-story-title">
+              <div class="story-header">
+                <span class="story-kicker">Key relation</span>
+                <h3 id="path-story-title">Project Path Evolution</h3>
+              </div>
+              <div id="path-story" class="story-content"></div>
+            </article>
+
+            <article class="story-card story-wide" aria-labelledby="conflict-story-title">
+              <div class="story-header">
+                <span class="story-kicker">Review boundary</span>
+                <h3 id="conflict-story-title">Conflict detected</h3>
+              </div>
+              <div id="conflict-story" class="story-content"></div>
+            </article>
+
+            <article class="story-card" aria-labelledby="pending-story-title">
+              <div class="story-header">
+                <span class="story-kicker">Temporal state</span>
+                <h3 id="pending-story-title">Pending work</h3>
+              </div>
+              <div id="pending-story" class="story-content"></div>
+            </article>
+
+            <article class="story-card" aria-labelledby="deprecated-story-title">
+              <div class="story-header">
+                <span class="story-kicker">Retired state</span>
+                <h3 id="deprecated-story-title">Deprecated state</h3>
+              </div>
+              <div id="deprecated-story" class="story-content"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block architecture-section" aria-labelledby="architecture-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-index">04 / Architecture</p>
+              <h2 id="architecture-title">Evidence before context</h2>
+            </div>
+            <p>Implemented stages stay visually separate from future work.</p>
+          </div>
+
+          <div class="architecture-flow" aria-label="Implemented architecture">
+            <div class="architecture-node">
+              <span class="node-state implemented">Implemented</span>
+              <strong>Project / Git / Docs / Tests</strong>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">↓</span>
+            <div class="architecture-node">
+              <span class="node-state implemented">Implemented</span>
+              <strong>Evidence Collector</strong>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">↓</span>
+            <div class="architecture-node">
+              <span class="node-state implemented">Implemented</span>
+              <strong>EvidenceSnapshot</strong>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">↓</span>
+            <div class="architecture-node">
+              <span class="node-state implemented">Implemented</span>
+              <strong>State Reconciler</strong>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">↓</span>
+            <div class="architecture-node state-output">
+              <span>ACTIVE</span>
+              <span>SUPERSEDED</span>
+              <span>CONFLICTED</span>
+              <span>PENDING</span>
+              <span>DEPRECATED</span>
+            </div>
+          </div>
+
+          <div class="future-flow" aria-label="Future architecture">
+            <div><span class="node-state progress">In progress</span><strong>Current State Model</strong></div>
+            <span aria-hidden="true">→</span>
+            <div><span class="node-state planned">Planned</span><strong>Context Compiler</strong></div>
+            <span aria-hidden="true">→</span>
+            <div><span class="node-state planned">Planned</span><strong>Authority Gate</strong></div>
+            <span aria-hidden="true">→</span>
+            <div><span class="node-state planned">Planned</span><strong>Checkpoint Writer</strong></div>
+            <span aria-hidden="true">→</span>
+            <div><span class="node-state planned">Planned</span><strong>Eval</strong></div>
+            <span aria-hidden="true">→</span>
+            <div><span class="node-state planned">Planned</span><strong>Dashboard</strong></div>
+          </div>
+        </section>
+
+        <section class="section-block authority-section" aria-labelledby="authority-title">
+          <div class="authority-copy">
+            <p class="section-index">05 / Authority boundary</p>
+            <h2 id="authority-title">Memory is not authority.</h2>
+            <p>
+              This demo visualizes what the system knows about project state.
+              Knowledge of context does not grant permission to modify a project.
+            </p>
+            <span class="authority-planned">Authority Gate — Planned</span>
+          </div>
+          <dl class="authority-matrix">
+            <div><dt>READ</dt><dd class="allow">ALLOW</dd></div>
+            <div><dt>ANALYZE</dt><dd class="allow">ALLOW</dd></div>
+            <div><dt>WRITE</dt><dd class="deny">DENY</dd></div>
+            <div><dt>DESTRUCTIVE</dt><dd class="deny">DENY</dd></div>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <span>Agent Memory OS · Public Alpha</span>
+        <span>Read · Parse · Render · Filter</span>
+      </div>
+    </footer>
+
+    <dialog class="drawer" id="provenance-drawer" aria-labelledby="drawer-title">
+      <div class="drawer-header">
+        <div>
+          <p class="section-index">Fact provenance</p>
+          <h2 id="drawer-title">Details</h2>
+        </div>
+        <button class="drawer-close" id="drawer-close" type="button" aria-label="Close details">×</button>
+      </div>
+      <div class="drawer-body" id="drawer-body"></div>
+    </dialog>
+  </body>
+</html>

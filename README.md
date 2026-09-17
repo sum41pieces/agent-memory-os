@@ -10,6 +10,15 @@ mistaken for completed facts. Project continuity is different from chat
 history: it needs evidence, provenance, explicit reconciliation, and clear
 authority boundaries.
 
+## Live demo
+
+Portfolio demo viewer available under /demo.
+
+The static, read-only explorer renders only committed synthetic evidence and
+reconciliation data. It demonstrates the implemented collector and reconciler,
+while preserving the capability boundaries documented below.
+GitHub Pages URL will be added after review.
+
 ## Capability status
 
 ### Implemented
